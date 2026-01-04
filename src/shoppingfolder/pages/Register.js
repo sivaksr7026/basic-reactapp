@@ -19,7 +19,7 @@ const Register = () => {
 
   try {
     const response = await fetch(
-      "http://localhost:5000/employees/register",
+      "https://shoopingbackend.azurewebsites.net/register",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
