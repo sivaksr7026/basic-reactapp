@@ -27,7 +27,7 @@ const Profile = () => {
   const fetchEmployees = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/employees/all",
+        "https://shoopingbackend.azurewebsites.net/employees/all",
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -42,7 +42,7 @@ const Profile = () => {
   const fechprofile = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/employees/profile",
+        "https://shoopingbackend.azurewebsites.net/employees/profile",
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -58,7 +58,7 @@ const Profile = () => {
 
   try {
     await axios.delete(
-      `http://localhost:5000/employees/delete/${id}`,
+      `https://shoopingbackend.azurewebsites.net/employees/delete/${id}`,
       {
         headers: { Authorization: `Bearer ${token}` },
       }
