@@ -16,7 +16,7 @@ const Editprofile = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/employees/edit/${id}`, {
+      .get(`https://shoopingbackend.azurewebsites.net/employees/edit/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
@@ -35,7 +35,7 @@ const Editprofile = () => {
 
   try {
     await axios.put(
-      `http://localhost:5000/employees/update/${id}`,
+      `https://shoopingbackend.azurewebsites.net/employees/update/${id}`,
       values,
       {
         headers: { Authorization: `Bearer ${token}` },
