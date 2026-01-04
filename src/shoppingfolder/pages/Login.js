@@ -16,7 +16,7 @@ export default function Login() {
 
   try {
     const res = await axios.post(
-      "http://localhost:5000/employees/login",
+      "https://shoopingbackend.azurewebsites.net/employees/login",
       { email, password }
     );
     localStorage.setItem("token", res.data.token);
